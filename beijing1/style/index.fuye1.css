@@ -1,0 +1,105 @@
+.navbar-default{
+    background: #2758a5;
+}
+.logo{
+    float:left;
+    margin-top:5px;
+}
+.logo1{
+    float:right;
+    margin-top:10px;
+    margin-right:70px;
+}
+.navbar-nav li{
+    margin-right:30px;
+}
+.navbar-default .navbar-nav>li>a {
+    color:#fff;
+}
+.navbar-nav li a:hover{
+    background:#0e3b82!important;
+    color:#fff!important;
+}
+/*banner*/
+#banner{
+    margin-top:-21px;
+}
+#banner img{
+    width: 1200px;
+    height: 800px;
+}
+#tu{
+    overflow: hidden;
+}
+#list1{
+    width: 7000px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#list1 li{
+    list-style: none;
+    float: left;
+}
+#nav1{
+    position: absolute;
+    margin-left: 40%;
+    top:850px;
+}
+#nav1 li{
+    list-style: none;
+    float: left;
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 8px;
+    border-radius: 360px;
+    border: 1px solid red;
+    position: relative;
+    bottom: 0;
+}
+#nav1 li:first-child{
+    background-color: red;
+}
+/*-----------main--------*/
+#main .bei{
+    margin-top: 30px;
+}
+.margin li a{
+    height: 30px;
+    display: block;
+    line-height: 30px;
+}
+.margin li a{
+    color:#000;
+    padding-left:20px;
+}
+.margin li a:hover{
+    color:red;
+    text-decoration: none;
+    background:#ccc;
+}
+.you li a{
+    color:#000;
+}
+.you li a:hover{
+    text-decoration: none;
+    color:red;
+}
+.top1 li{
+    text-indent:2em;
+}
+.top1 .one{
+    margin-top:20px;
+}
+.top2 span{
+    color:red;
+    margin-left:15px;
+}
+/*---footer---*/
+footer{
+    margin-top:15px;
+}
+footer .a{
+    margin-top:30px;
+}

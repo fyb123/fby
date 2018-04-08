@@ -1,0 +1,158 @@
+.navbar-default{
+    background: #2758a5;
+}
+.logo{
+    float:left;
+    margin-top:5px;
+}
+.logo1{
+    float:right;
+    margin-top:10px;
+    margin-right:70px;
+}
+.navbar-nav li{
+    margin-right:30px;
+}
+.navbar-default .navbar-nav>li>a {
+    color:#fff;
+}
+.navbar-nav li a:hover{
+    background:#0e3b82!important;
+    color:#fff!important;
+}
+/*banner*/
+#left{
+    width: 300px;
+    height: 355px;
+    border:1px solid dodgerblue;
+    background:dodgerblue;
+    border-radius:10px;
+}
+#left h2{
+    font-size:20px;
+    color:#fff;
+    margin-left:10px;
+}
+#bottom{
+    width: 298px;
+    height: 275px;
+    margin:0 auto;
+    background:#fff;
+    border-radius:10px;
+    margin-top:20px;
+}
+#bottom p:nth-of-type(1){
+    padding-top:40px;
+}
+#bottom p{
+    margin-top:10px;
+}
+label{
+    width: 80px;
+    font-family: Arial;
+    font-size:16px;
+    float:left;
+    text-align: right;
+}
+#bottom .date1{
+    width: 200px;
+    height: 25px;
+}
+#form{
+    margin-left:80px;
+    border-radius: 4px;
+    background:orange;
+    color:#fff;
+}
+#pic{
+    height:370px;
+    width: 600px;
+}
+#pic img{
+    width: 600px;
+    height: 350px;
+    border:1px solid black;
+    display: none;
+    position: absolute;
+}
+#pic .pic1{
+    display: block;
+}
+#tu{
+    position: absolute;
+    top:320px;
+    left:415px;
+}
+#tu li{
+    float:left;
+    width:15px;
+    height:15px;
+    margin-left:5px;
+    background:deepskyblue;
+    border-radius: 50%;
+    list-style: none;
+}
+#tu .first{
+    background:yellow;
+}
+/*----main---*/
+.jiu li{
+    list-style: none;
+    float:left;
+    width: 150px;
+    height: 30px;
+    display: block;
+    background:dodgerblue;
+    text-align: center;
+    line-height:30px;
+    margin-left:15px;
+    margin-top:30px;
+    color:#fff;
+}
+.top1{
+    width: 203px;
+    height: 159px;
+    overflow: hidden;
+}
+.top1 img{
+    width: 203px;
+    height: 159px;
+}
+.top1:hover img{
+    transform: scale(1.5,1.5);
+    transition: all 1s ease 0s;
+    -webkit-transform: scale(1.5,1.5);
+}
+.t-h-t img{
+    width: 18px;
+    height: 15px;
+}
+.t-h-t span{
+    color:red;
+    font-size:24px;
+}
+.one{
+    margin-top:30px;
+}
+.tt{
+    margin-top:30px;
+}
+.right1{
+    display: block;
+}
+.right2{
+    display: none;
+}
+.right3{
+    display: none;
+}
+.right4{
+    margin-top:30px;
+}
+/*-------footer-------*/
+footer{
+    margin-top:15px;
+}
+footer .a{
+    margin-top:30px;
+}

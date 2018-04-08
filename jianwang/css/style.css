@@ -1,0 +1,1030 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+ul,li{
+    list-style: none;
+}
+.clearfix::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+
+#header{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header .left{
+    float: left;
+    height: 50px;
+}
+#header .left span{
+    color: #cccccc;
+    font-weight: 100;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+#header .right{
+    float: right;
+}
+#header .right ul li{
+    float: left;
+}
+#header .right ul li a{
+    padding: 0 12px;
+    font-size: 13px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #ffffff;
+}
+#header .right ul li:nth-of-type(1) a,#header .right ul li:nth-of-type(2) a,
+#header .right ul li:nth-of-type(3) a,#header .right ul li:nth-of-type(4) a{
+    color: #e94a37;
+}
+#header .right ul li a:hover{
+    color: #e94a37;
+    border-bottom-color:#e94a37;
+    background-color: #f2f2f2;
+}
+
+/*------------------------------------Header²¿·Ö½áÊø-----------------------------------*/
+
+/*------------------------------------µÇÂ¼×¢²á²¿·Ö¿ªÊ¼-----------------------------------*/
+body{
+    position: relative;
+}
+#Pass{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+}
+#Pass .Pass{
+    width: 570px;
+    margin: 200px auto 0;
+}
+#Pass .Pass .aui{
+    height: 44px;
+    width: 100%;
+    background: url("../img/img-18.png") repeat-x;
+    color: #ffffff;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+    position: relative;
+}
+
+#Pass .Pass .aui span{
+    display: block;
+    width: 44px;
+    height: 44px;
+    background: url("../img/img-19.png") no-repeat bottom;
+    position: absolute;
+    right: -44px;
+    top: 0;
+    cursor: pointer;
+}
+#Pass .Pass .aui span:hover{
+    background-position: top;
+}
+#Pass .Pass .aui_big{
+    width: 570px;
+    background-color: #e6e6e6;
+    padding: 40px 105px;
+}
+#Pass .Pass .aui_big .nav{
+    width: 360px;
+    margin-bottom: 25px;
+}
+#Pass .Pass .aui_big .nav a{
+    color: #666666;
+    float: left;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 2px solid #999999;
+}
+#Pass .Pass .aui_big .nav a.active{
+    color: #4e6fa9;
+    border-color: #4e6fa9;
+    font-weight: bold;
+}
+#Pass .Pass .ps .login form p{
+    height: 36px;
+    margin-top: 10px;
+}
+#Pass .Pass .ps .login form p label{
+    float: left;
+    width: 76px;
+    height: 36px;
+    text-align: right;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+}
+#Pass .Pass .ps .login form p input{
+    float: left;
+    width: 200px;
+    height: 36px;
+    padding-left: 10px;
+}
+#Pass .Pass .ps .login form p a{
+    float: left;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #991b0e;
+}
+#Pass .Pass .ps .login form button{
+    width: 200px;
+    height: 44px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    background: url("../img/img-20.jpg")repeat-x;
+    border: none;
+    margin-left: 76px;
+    margin-top: 20px;
+
+}
+button{
+    cursor: pointer;
+}
+#Pass .input1,#Pass .input2{
+    font-size: 13px;
+    height: 18px;
+    padding-left: 20px;
+    margin-left: 76px;
+    line-height: 18px;
+    margin-top: 5px;
+    background: url("../img/img-21.png")no-repeat;
+    display: none;
+    background-position: 0 -25px;/* ´íºÅ 0 0 Ì¾ºÅ 0 -25px ¶ÔºÅ 0 -50px*/
+}
+
+
+#Pass .Pass .ps .registered{
+    display: none;
+}
+#Pass .Pass .ps .registered form p{
+    height: 36px;
+    margin-top: 10px;
+}
+#Pass .Pass .ps .registered form p label{
+    float: left;
+    width: 76px;
+    height: 36px;
+    text-align: right;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+}
+#input3{
+    border:1px solid #000;
+}
+#Pass .Pass .ps .registered form p input{
+    float: left;
+    width: 200px;
+    height: 36px;
+    padding-left: 10px;
+}
+#Pass .Pass .ps .registered form p a{
+    float: left;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #991b0e;
+}
+#Pass .Pass .ps .registered form button{
+    width: 200px;
+    height: 44px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    background: url("../img/img-20.jpg")repeat-x;
+    border: none;
+    margin-left: 76px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#Pass .input1,#Pass .input2,#Pass .input4,#Pass .input5,#Pass .input6,#Pass .input7{
+    font-size: 13px;
+    height: 18px;
+    padding-left: 20px;
+    margin-left: 76px;
+    line-height: 18px;
+    margin-top: 5px;
+    background: url("../img/img-21.png")no-repeat;
+    display: none;
+    /*background-position: 0 -25px;/!* ´íºÅ 0 0 Ì¾ºÅ 0 -25px ¶ÔºÅ 0 -50px*!/*/
+}
+#Pass .Pass .ps .registered form .yes{
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 76px;
+}
+#Pass .Pass .ps .registered form .yes div a{
+    margin-right: 3px;
+    color: #000000;
+    text-decoration: underline;
+    margin-top: 5px;
+    display: inline-block;
+}
+#Pass .Pass .ps .registered .p{
+    font-size: 13px;
+    color: #666666;
+    margin-top: 20px;
+}
+#Pass .Pass .ps .registered .p a{
+    color: #ff0000;border-bottom: 1px solid #f00;
+}
+
+/*------------------------------------µÇÂ¼×¢²á²¿·Ö½áÊø-----------------------------------*/
+
+/*------------------------------------main部分结束-----------------------------------*/
+
+#main{
+    width: 100%;
+    background: #f2f1e8;
+}
+#main #main-content{
+    max-width:1920px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*------------------------------------main²¿·ÖÖÐmain-jw3-01²¿·Ö¿ªÊ¼-----------------------------------*/
+#main #main-content #main-jw3-01{
+    background-color: rgba(0,0,0,.9);
+}
+#main #main-content #main-jw3-01 .content{
+    width: 1200px;
+    margin: 0 auto;
+    height: 85px;
+}
+#main #main-content #main-jw3-01 .content .left{
+    float: left;
+}
+#main #main-content #main-jw3-01 .content .left img{
+    height: 80px;
+}
+#main #main-content #main-jw3-01 .content .center{
+    width: 800px;
+    height: 85px;
+    background: url("../img/img-02.png") no-repeat;
+    float: left;
+    background-position: 220px 20px;
+}
+#main #main-content #main-jw3-01 .content .right{
+    float: right;
+}
+#main #main-content #main-jw3-01 .content .right a{
+    width: 100px;
+    height: 36px;
+    float: left;
+    margin: 26px 0 0 7px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 36px;
+    background-color: #978b52;
+    border: 1px solid #808080;
+}
+/*------------------------------------main²¿·ÖÖÐmain-jw3-01²¿·Ö½áÊø-----------------------------------*/
+
+/*------------------------------------main²¿·ÖÖÐmain-jw3-02²¿·Ö¿ªÊ¼-----------------------------------*/
+
+#main #main-content #main-jw3-02{
+    position: relative;
+    min-height: 1445px;
+    overflow: hidden;
+}
+#main #main-content #main-jw3-02 .slogan{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    background: url("../img/img-17.png");
+    width: 367px;
+    height: 668px;
+}
+#main #main-content #main-jw3-02 .pic{
+    height: 1445px;
+    width: 1920px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    top: 0;
+}
+#main #main-content #main-jw3-02 .pic img{
+    position:absolute;
+}
+#main #main-content #main-jw3-02 .pic li{
+    display: none;
+}
+#main #main-content #main-jw3-02 .pic li:nth-of-type(1){
+    display: block;
+}
+#main #main-content #main-jw3-02 .pic li img{
+    width: 1920px;
+    height: 1445px;
+}
+#main #main-content #main-jw3-02 .dot{
+    position: absolute;
+    right: 50px;
+    top: 300px;
+}
+#main #main-content #main-jw3-02 .dot li{
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius:50%;
+    background-color: #555555;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    position: relative;
+    cursor: pointer;
+}
+#main #main-content #main-jw3-02 .dot li.cur{
+    background-color: #272727;
+    position: relative;
+}
+
+#main #main-content #main-jw3-02 .dot li span{
+    position: absolute;
+    display: none;
+    left: -71px;
+    top: -15px;
+    width: 62px;
+    height: 48px;
+    background: url("../img/img-16.png");
+}
+#main #main-content #main-jw3-02 .dot li.cur span{
+    display: block;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(1) span{
+    background-position: 0 0;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(2) span{
+    background-position: 0 -50px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(3) span{
+    background-position: 0 -100px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(4) span{
+    background-position: 0 -150px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(5) span{
+    background-position: 0 -200px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(6) span{
+    background-position: 0 -248px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(7) span{
+    background-position: 0 -297px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(8) span{
+    background-position: 0 -348px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(9) span{
+    background-position: 0 -396px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(10) span{
+    background-position: 0 -446px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(11) span{
+    background-position: 0 -496px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(12) span{
+    background-position: 0 -545px;
+}
+#main #main-content #main-jw3-02 .dot li:nth-of-type(13) span{
+    background-position: 0 -595px;
+}
+
+
+
+/*------------------------------------main²¿·ÖÖÐmain-jw3-02²¿·Ö½áÊø-----------------------------------*/
+
+
+/*------------------------------------main-jw3-03-----------------------------------*/
+
+#main-jw3-03{
+    width: 1127px;
+    height: 378px;
+    background: url("../img/img-22.png")no-repeat;
+    position: absolute;
+    top: 1119px;
+    left: 50%;
+    margin-left: -500px;
+}
+#main-jw3-03 .left,#main-jw3-03 .center,#main-jw3-03 .right{
+    width: 303px;
+    height: 378px;
+
+    float: left;
+}
+#main-jw3-03 .left{
+    margin-right: 58px;
+    padding: 80px 29px 0 30px;
+    position: relative;
+}
+#main-jw3-03 .left button{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 29px;
+    display: block;
+    width: 244px;
+    height: 51px;
+    border: none;
+    background: url("../img/img-23.jpg")no-repeat;
+}
+#codeSpan{
+
+}
+#main-jw3-03 .left button:hover{
+    background-position: 0 -53px;
+}
+#main-jw3-03 .registeredTwo{
+
+}
+#main-jw3-03 .registeredTwo div{
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #000000;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #60512e;
+    cursor: pointer;
+}
+#main-jw3-03 .registeredTwo div.active{
+    background-color: #bbb06c;
+}
+#main-jw3-03 .form-two{
+    display: none;
+}
+#main-jw3-03 .form-one{
+    display: block;
+}
+#main-jw3-03 .left .personality{
+    width: 122px;
+    height: 40px;
+}
+#main-jw3-03 .left .phone{
+    width: 122px;
+    height: 40px;
+    background: url("../img/icon-reg.png")no-repeat;
+    background-position: 100px 15px;
+}
+#main-jw3-03 .left .personality-regUser{
+    width: 244px;
+    height: 40px;
+    margin:10px 0;
+    background: #fff5f5;
+}
+#main-jw3-03 .left .personality-regUser input{
+    width: 244px;
+    height: 40px;
+    border: 1px solid #000000;
+    outline: none;
+    padding-left:30px;
+
+}
+#main-jw3-03 .left .personality-regUser input{
+    background: url("../img/icon1.png")no-repeat;
+    background-position:4px 6px;
+}
+#main-jw3-03 .left .personality-regUser.two input{
+    background: url("../img/icon1.png")no-repeat;
+    background-position:4px 6px;
+}
+#main-jw3-03 .left .personality-check{
+    font-size: 13px;
+    margin-top: 60px;
+}
+
+#main-jw3-03 .left .phone-regUser{
+    width: 244px;
+    height: 40px;
+    margin:10px 0;
+    background:#fff5f5;
+}
+#main-jw3-03 .left .phone-regUser input{
+    width: 244px;
+    height: 40px;
+    border: 1px solid #000000;
+    outline: none;
+    padding-left:30px;
+
+}
+#main-jw3-03 .left .phone-regUser.phone-two input{
+    float: left;
+    width: 144px;
+    height: 40px;
+    border-right:none;
+}
+#main-jw3-03  .left form .phone-regUser:nth-of-type(1) input{
+    background: url("../img/icon4.png")no-repeat 4px 12px;
+}
+#main-jw3-03  .left form .phone-regUser:nth-of-type(2) input{
+    background: url("../img/icon5.png")no-repeat 4px 12px;
+}
+#main-jw3-03  .left form .phone-regUser:nth-of-type(3) input{
+    background: url("../img/icon3.png")no-repeat 4px 12px;
+}
+#main-jw3-03 .left .phone-regUser a{
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+    background: #07ac87;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-left:none;
+
+}
+#main-jw3-03 .left .phone-check{
+    font-size: 13px;
+}
+
+#main-jw3-03 .center{
+    margin-left: 20px;
+    margin-right: 80px;
+    position: relative;
+}
+
+#main-jw3-03 .center a{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: block;
+    width: 246px;
+    height: 51px;
+    background: url("../img/img-24.jpg")no-repeat;
+
+
+}
+#main-jw3-03 .center a:hover{
+    background-position:0 -56px;
+}
+#main-jw3-03 .right{
+    position: relative;
+}
+#main-jw3-03 .right a{
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: block;
+    width: 246px;
+    height: 51px;
+    background: url("../img/img-23.jpg")no-repeat;
+}
+#main-jw3-03 .right a:hover{
+    background-position:0 -53px;
+}
+
+/*------------------------------------main-jw3-03-----------------------------------*/
+
+
+
+/*------------------------------------main²¿·Ö½áÊø-----------------------------------*/
+section{
+    width:100%;
+    height: 4600px;
+    min-width:1150px;
+    background:url(../img/bg.jpg);
+    background-position: center 0;
+    padding-top: 200px;
+    margin:auto;
+}
+#section-bg{
+    width: 100%;
+    min-width:1150px;
+    height: 2000px;
+    margin:auto;
+}
+section #selector{
+    width: 1150px;
+    height: 50px;
+    margin:auto;
+}
+section #section-one{
+    width: 1150px;
+    height: 572px;
+    margin:auto;
+    overflow:hidden;
+    position:relative;
+}
+section #selector .ul1 li{
+    width: 260px;
+    height: 36px;
+    float: left;
+    margin-left: 90px;
+    margin-top: 10px;
+    text-align:center;
+    line-height: 36px;
+    font-size:19px;
+    color:#746b4a;
+    cursor:pointer;
+}
+section #selector .ul1::after{
+    display: table;
+    content:"";
+    clear:both;
+}
+section #selector .ul1 .on{
+    background-color:#eae6dd;
+    border-radius: 27px;
+}
+section #section-one .auto{
+    width: 6000px;
+    height: 572px;
+    transition:0.8s;
+}
+section #section-one .auto li{
+    float: left;
+}
+section #section-one .auto li img{
+    width: 1150px;
+    height: 572px;
+}
+section #section-one .click{
+    position:absolute;
+    bottom:20px;
+    right: 100px;
+}
+section #section-one .click li{
+    width: 20px;
+    height: 20px;
+    background-color:gray;
+    float: left;
+    margin-left: 30px;
+    border-radius:50%;
+    opacity:0.7;
+    transition:0.5s;
+}
+section #section-one .click .li1{
+    width:40px;
+    border-radius: 25px;
+    opacity:1;
+    background-color:#ff6622;
+}
+
+section #section-two{
+    width: 1150px;
+    height: 572px;
+    background-color:green;
+    margin:auto;
+    overflow:hidden;
+    position:relative;
+}
+section #section-two .auto{
+    width: 6000px;
+    height: 572px;
+    transition:0.8s;
+}
+section #section-two .auto li{
+    float: left;
+}
+section #section-two .auto li img{
+    width: 1150px;
+    height: 572px;
+}
+section #section-two .click{
+    position:absolute;
+    bottom:20px;
+    right: 100px;
+}
+section #section-two .click li{
+    width: 20px;
+    height: 20px;
+    background-color:gray;
+    float: left;
+    margin-left: 30px;
+    border-radius:50%;
+    opacity:0.7;
+    transition:0.5s;
+}
+section #section-two .click .li1{
+    width:40px;
+    border-radius: 25px;
+    opacity:1;
+    background-color:#ff6622;
+}
+
+section #section-three{
+    width: 1150px;
+    height: 572px;
+    background-color:green;
+    margin:auto;
+    overflow:hidden;
+    position:relative;
+}
+section #section-three .auto{
+    width: 6000px;
+    height: 572px;
+    transition:0.8s;
+}
+section #section-three .auto li{
+    float: left;
+}
+section #section-three .auto li img{
+    width: 1150px;
+    height: 572px;
+}
+section #section-three .click{
+    position:absolute;
+    bottom:20px;
+    right: 100px;
+}
+section #section-three .click li{
+    width: 20px;
+    height: 20px;
+    background-color:gray;
+    float: left;
+    margin-left: 30px;
+    border-radius:50%;
+    opacity:0.7;
+    transition:0.5s;
+}
+section #section-three .click .li1{
+    width:40px;
+    border-radius: 25px;
+    opacity:1;
+    background-color:#ff6622;
+}
+
+section .plays div{
+    display: none;
+}
+section .plays #section-one{
+    display: block;
+}
+main{
+    width: 100%;
+    min-width: 1150px;
+}
+main .display{
+    width: 1150px;
+    height: 460px;
+    margin:265px auto;
+}
+main .display div{
+    width: 1150px;
+    height: 460px;
+    background-size:100% 100%;
+    background-position:center center; 
+    display: none;
+    position:relative;
+}
+main .display .firstdiv{
+    display: block;
+}
+main .display>ul>li{
+    width: 87px;
+    float: left;
+    font-size: 22px;
+    color:#5e413c;
+    cursor:pointer;
+    text-align: center;
+}
+main .display ul li .sbox{
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    margin:auto;
+   
+}
+main .display ul .dli1{
+    color:#ff6622;
+}
+main .display div ul{
+    width: 300px;
+    height: 200px;
+    float: right;
+    position:absolute;
+    top:200px;
+    right:50px;
+    font-size:16px;
+}
+#main2{
+    width: 1150px;
+    height: 450px;
+    margin:auto;
+}
+#main2 img{
+    width: 1150px;
+    height: 450px;
+}
+#main3{
+    width: 1150px;
+    height: 450px;
+    margin:450px auto;
+}
+#main3 img{
+    width: 1150px;
+    height: 450px;
+}
+#main4{
+    width: 1150px;
+    height: 500px;
+    margin:auto;
+    margin-top: -115px;
+    opacity:0.7;
+    padding-left: 210px;
+}
+#main4 .game-t{
+    width: 450px;
+    height: 250px;
+}
+#main4 .game-t div{
+    padding-bottom: 25px;
+    color:#2d3566;
+}
+#main4 .gamer-t{
+    width: 520px;
+    height: 100px;
+    margin-top: 60px;
+    overflow:hidden;
+}
+#main4 .gamer-t ul{
+    width: 520px;
+    height: 450px;
+    transition:0.7s;
+}
+#main4 .gamer-t ul li{
+    width: 520px;
+    height: 100px;
+}
+
+#main4 .game-t2{
+    width: 450px;
+    height: 250px;
+}
+#main4 .game-t2 div{
+    padding-bottom: 25px;
+    color:#2d3566;
+}
+#main4 .gamer-t2{
+    width: 520px;
+    height: 100px;
+    margin-top: 60px;
+    overflow:hidden;
+}
+#main4 .gamer-t2 ul{
+    width: 520px;
+    height: 450px;
+    transition:0.7s;
+}
+#main4 .gamer-t2 ul li{
+    width: 520px;
+    height: 100px;
+}
+
+#main5{
+    width: 1150px;
+    height: 500px;
+    margin:auto;
+    margin-top: 165px;
+}
+#main5 .left-5{
+    width: 550px;
+    height: 380px;
+    margin-left: 15px;
+    float: left;
+}
+#main5 .left-5 h1{
+    border-left: 3px solid orange;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    color:#fff;
+}
+#main5 .left-5 ul li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    font-size:18px;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    border-bottom:gray solid 1px;
+}
+#main5 .left-5 ul .li1{
+    background-color:gray;
+}
+#main5 .left-5 ul::after{
+    display: table;
+    content:"";
+    clear:both;
+}
+#main5 .left-5 div{
+    display: none;
+    color:gray;
+    margin-top: 25px;
+}
+#main5 .left-5 .div1{
+    display: block;
+}
+
+
+#main5 .right-5{
+    width: 550px;
+    height: 380px;
+    margin-left: 15px;
+    float: right;
+}
+#main5 .right-5 h1{
+    border-left: 3px solid orange;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    color:#fff;
+}
+#main5 .right-5 ul li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    font-size:18px;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    border-bottom:gray solid 1px;
+}
+#main5 .right-5 ul .li1{
+    background-color:gray;
+}
+#main5 .right-5 ul::after{
+    display: table;
+    content:"";
+    clear:both;
+}
+#main5 .right-5 div{
+    display: none;
+    color:gray;
+    margin-top: 25px;
+}
+#main5 .right-5 .div1{
+    display: block;
+}
+.footer-bg{
+    width: 100%;
+    height: 320px;
+    background-color:#222;
+    padding:15px 0;
+}
+.footer-bg .footer{
+    width: 1150px;
+    height: 320px;
+    margin:auto;
+    text-align: center;
+    color:#fff;
+}
+.footer-bg .footer p{
+    padding-top: 5px;
+    padding-bottom: 15px;
+}

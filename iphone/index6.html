@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <script src="js/iconfont.js"></script>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="register-header">
+            <a href="index.html" class="zhuce"> <i class="iconfont icon-shouye"></i></a>
+            会员登录
+            <a href="index5.html" class="denglu">注册</a>
+        </div>
+        <div class="Login-1">
+            <div class="active">账号密码登录</div>
+            <div>手机验证码登录</div>
+        </div>
+        <form action="#" method="post" class="clearfix">
+        <div class="Login-2">
+            <div class="Login-21">
+                <div><span>账号</span>
+                    <input placeholder="手机号/邮箱/用户名/门店会员卡" required id="input1" onclick="shiJian11()" onblur="shiJian1()" type="text" class="phone" name="text1">
+                    <span id="span1"></span>
+                </div>
+                <div><span>密码</span>
+                    <input placeholder="请输入6-20位潮搭密码" required id="input2" onclick="shiJian22()" onblur="shiJian2()" type="password" class="phone" name="text2">
+                    <span id="span2"></span>
+                </div>
+            </div>
+            <div class="Login-21" style="display: none">
+                <div class="input111">
+                    <span>手机号</span>
+                    <input placeholder="请输入手机号" required pattern="^1(3|4|5|7|8)\d{9}$" id="input4" type="text" class="phone">
+                    <span id="span4"></span>
+                </div>
+                <div class="xian"><span>手机验证码</span>
+                    <input type="text" placeholder="请输入手机验证码" class="possword"></div>
+                <input type="submit" value="获取验证码" onclick="settime(this)" id="btn">
+
+            </div>
+        </div>
+        <div class="Login-3">
+            <input type="submit" value="登录">
+        </div>
+        </form>
+        <div class="Login-4">
+            <div class="Login_4L">门店卡登录</div>
+            <div class="Login_4R">忘记密码</div>
+        </div>
+        <div class="Login-5">
+            <a href="index5.html">快速注册</a>
+        </div>
+        <div class="Login-6">
+            <div class="Login-60">
+                <div class="Login_xian1"></div>
+                <div class="Login-6p">其他方式登录</div>
+                <div class="Login_xian2"></div>
+            </div>
+        </div>
+        <div class="Login-7">
+            <div class="Login-70">
+                <h6>QQ</h6>
+                <h6>易付宝</h6>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(".Login-1>div").click(
+                function(){
+                    var index=$(this).index();
+                    $(".Login-2 .Login-21").eq(index).show().siblings().hide();
+                    $(this).addClass("active").siblings().removeClass("active")
+                }
+        );
+        /*倒计时*/
+        var countdown=60;
+        function settime(val) {
+            if (countdown == 0) {
+                val.removeAttribute("disabled");    //        <input> 标签的 disabled 属性
+                //removeAttribute() 方法删除指定的属性。
+                // 被禁用的 input 元素既不可用，也不可点击。可以设置 disabled 属性，直到满足某些其他的条件为止（比如选择了一个复选框等等）。
+                // 然后，就需要通过removeAttribute() 来删除 disabled 值，将 input 元素的值切换为可用。
+
+                val.value = "免费获取验证码";
+                countdown = 60;
+            } else {
+                val.setAttribute("disabled", true);  //setAttribute() 方法添加指定的属性，并为其赋指定的值。如果这个指定的属性已存在，则仅设置/更改值。
+                val.value = "重新发送(" + countdown + ")";
+                countdown--;
+                setTimeout(function () {  //setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式
+                    settime(val)
+                }, 1000)
+            }
+        }
+        function shiJian1(){
+            var a = document.getElementById("input1").value;
+            if(a.length>=2&& a.length<=18){
+                document.getElementById("span1").style.color="#1cc940";
+                document.getElementById("span1").innerHTML="对了"
+            }else{
+                document.getElementById("span1").style.color="#c92438";
+                document.getElementById("span1").innerHTML="格式错误,仅支持中文、字母、数字2-18个字符"
+            }
+        }
+        function shiJian11(){
+            document.getElementById("span1").style.display="block";
+            var a = document.getElementById("input1").value;
+            if(a.length==0){
+                document.getElementById("span1").style.color="#000";
+                document.getElementById("span1").innerHTML="支持中文、数字、字母的2-18个字符"
+            }
+        }
+        function shiJian2(){
+            var a = document.getElementById("input2").value;
+            if(a.length>=6&& a.length<=18){
+
+                document.getElementById("span2").style.color="#1cc940";
+                document.getElementById("span2").innerHTML="对了"
+            }else{
+                document.getElementById("span2").style.color="#c92438";
+                document.getElementById("span2").innerHTML="仅支持字母、数字6-18个字符"
+            }
+        }
+        function shiJian22(){
+            document.getElementById("span2").style.display="block";
+            var a = document.getElementById("input2").value;
+            if(a.length==0){
+                document.getElementById("span2").style.color="#000";
+                document.getElementById("span2").innerHTML="建议使用字母、数字两种组合的长度为6-18个字符"
+            }
+        }
+
+    </script>
+</body>
+</html>

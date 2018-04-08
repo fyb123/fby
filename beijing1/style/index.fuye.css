@@ -1,0 +1,8 @@
+.navbar-brand {
+    margin-top: -15px;
+    margin-right: 170px;
+}
+.navbar-nav li a:hover{
+    background:#0e3b82!important;
+    color:#fff!important;
+}
